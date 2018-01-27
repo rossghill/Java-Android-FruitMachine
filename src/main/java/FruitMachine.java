@@ -14,4 +14,7 @@ public class FruitMachine {
     }
 
 
+    public Symbol getReel1Symbol() {
+        return reel1;
+    }
 }
