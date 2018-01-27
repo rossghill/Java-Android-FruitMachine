@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FruitMachine.iml" filepath="$PROJECT_DIR$/.idea/modules/FruitMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FruitMachine_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FruitMachine_main.iml" group="FruitMachine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FruitMachine_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FruitMachine_test.iml" group="FruitMachine" />
     </modules>
   </component>
 </project>
