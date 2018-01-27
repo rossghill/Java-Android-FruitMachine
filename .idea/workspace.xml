@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bdcb56bf-3da6-45f9-a7ac-c2c6d7210b4e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/FruitMachineTest.class" afterPath="$PROJECT_DIR$/out/test/classes/FruitMachineTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SymbolTest.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FruitMachine.java" afterPath="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Symbol.java" afterPath="$PROJECT_DIR$/src/main/java/Symbol.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" afterPath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SymbolTest.java" afterPath="$PROJECT_DIR$/src/test/java/SymbolTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -55,11 +51,16 @@
       <file leaf-file-name="FruitMachine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="381">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,14 +69,16 @@
       <file leaf-file-name="FruitMachineTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+            <state relative-caret-position="376">
+              <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -392,8 +395,8 @@
         <option value="$PROJECT_DIR$/src/test/java/SymbolsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SymbolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Symbol.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
         <option value="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
       </list>
     </option>
   </component>
@@ -659,18 +662,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 10m 18s.xml">
-      <configuration name="FruitMachineTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 13m 44s.xml">
-      <configuration name="FruitMachineTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 13m 45s.xml">
-      <configuration name="FruitMachineTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 15m 43s.xml">
-      <configuration name="FruitMachineTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FruitMachineTest - 2018.01.27 at 12h 16m 11s.xml">
       <configuration name="FruitMachineTest" configurationId="JUnit" />
     </history-entry>
@@ -684,6 +675,18 @@
       <configuration name="FruitMachineTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FruitMachineTest - 2018.01.27 at 12h 24m 25s.xml">
+      <configuration name="FruitMachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 30m 50s.xml">
+      <configuration name="FruitMachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 32m 22s.xml">
+      <configuration name="FruitMachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 33m 13s.xml">
+      <configuration name="FruitMachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest - 2018.01.27 at 12h 38m 15s.xml">
       <configuration name="FruitMachineTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FruitMachineTest_getReelValue - 2018.01.27 at 12h 16m 35s.xml">
@@ -765,25 +768,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="381">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+        <state relative-caret-position="376">
+          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
           </folding>
         </state>
       </provider>

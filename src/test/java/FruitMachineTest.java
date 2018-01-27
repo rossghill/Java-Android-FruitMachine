@@ -5,18 +5,14 @@ import static org.junit.Assert.assertEquals;
 
 public class FruitMachineTest {
 
-//    Symbol cherry;
-//    Symbol orange;
-//    Symbol banana;
-//    Symbol bar;
-//    Symbol gold;
+
     FruitMachine fruitMachine_win;
     FruitMachine fruitMachine_lose;
 
     @Before
     public void before() {
         fruitMachine_win = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.CHERRY);
-        fruitMachine_win = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.BAR);
+        fruitMachine_lose = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.BAR);
     }
 
     @Test
@@ -26,7 +22,12 @@ public class FruitMachineTest {
 
     @Test
     public void getReelValue() {
-        assertEquals(10, fruitMachine_win.getReel1Symbol().getValue());
+        assertEquals(100, fruitMachine_lose.getReel3Symbol().getValue());
+    }
+
+    @Test
+    public void returnWinningsUponWin() {
+        assertEquals(30, fruitMachine_win.threeMatchingSymbols());
     }
 
 
