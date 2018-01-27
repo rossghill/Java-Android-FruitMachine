@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 import static java.lang.Integer.sum;
 
@@ -13,7 +14,7 @@ public class FruitMachine {
         this.reel1 = reel1;
         this.reel2 = reel2;
         this.reel3 = reel3;
-        this.fruits = new ArrayList<Symbol>();
+        this.fruits = new ArrayList<>();
     }
 
     public Symbol getReel1Symbol() {
@@ -49,5 +50,8 @@ public class FruitMachine {
         fruits.add(Symbol.BANANA);
         fruits.add(Symbol.BAR);
         fruits.add(Symbol.GOLD);
+        Collections.shuffle(fruits);
+        Symbol returned_symbol = fruits.get(0);
+        System.out.println(returned_symbol);
     }
 }
