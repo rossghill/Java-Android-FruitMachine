@@ -13,6 +13,7 @@ public class FruitMachine {
         this.reel1 = reel1;
         this.reel2 = reel2;
         this.reel3 = reel3;
+        this.fruits = new ArrayList<Symbol>();
     }
 
     public Symbol getReel1Symbol() {
@@ -28,10 +29,25 @@ public class FruitMachine {
     }
 
     public int threeMatchingSymbols() {
-        int winnings = 0;
         int value1 = reel1.getValue();
         int value2 = reel2.getValue();
         int value3 = reel3.getValue();
-        return winnings = value1 + value2 + value3;
+        return value1 + value2 + value3;
+    }
+
+    public int twoMatchingSymbols() {
+        return 0;
+    }
+
+    public int noMatchingSymbols() {
+        return 0;
+    }
+
+    public void shuffle() {
+        fruits.add(Symbol.CHERRY);
+        fruits.add(Symbol.ORANGE);
+        fruits.add(Symbol.BANANA);
+        fruits.add(Symbol.BAR);
+        fruits.add(Symbol.GOLD);
     }
 }

@@ -30,5 +30,11 @@ public class FruitMachineTest {
         assertEquals(30, fruitMachine_win.threeMatchingSymbols());
     }
 
+    @Test
+    public void returnZeroUponLoss() {
+        assertEquals(0, fruitMachine_lose.twoMatchingSymbols());
+        assertEquals(0, fruitMachine_lose.noMatchingSymbols());
+    }
+
 
 }
