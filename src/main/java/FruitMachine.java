@@ -13,7 +13,6 @@ public class FruitMachine {
         this.reel3 = reel3;
     }
 
-
     public Symbol getReel1Symbol() {
         return reel1;
     }
