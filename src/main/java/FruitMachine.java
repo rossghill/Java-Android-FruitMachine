@@ -45,20 +45,35 @@ public class FruitMachine {
         return 0;
     }
 
+    public void shuffle() {
+        Collections.shuffle(fruits);
+    }
+
     public void getRandomSymbols() {
         fruits.add(Symbol.CHERRY);
         fruits.add(Symbol.ORANGE);
         fruits.add(Symbol.BANANA);
         fruits.add(Symbol.BAR);
         fruits.add(Symbol.GOLD);
-        Collections.shuffle(fruits);
+        shuffle();
         Symbol random_symbol = fruits.get(0);
         reel1 = random_symbol;
-        Collections.shuffle(fruits);
+        shuffle();
         Symbol random_symbol2 = fruits.get(0);
         reel2 = random_symbol2;
-        Collections.shuffle(fruits);
+        shuffle();
         Symbol random_symbol3 = fruits.get(0);
         reel3 = random_symbol3;
+    }
+
+    public int spin() {
+        if (reel1 == reel2 && reel1 == reel3) {
+            int win = threeMatchingSymbols();
+            System.out.println("Congratulations! You've won £" + win);
+            return win;
+        } else {
+            int win = noMatchingSymbols();
+            System.out.println("Hard luck! Your winnings are £" + win);
+            return 0;}
     }
 }

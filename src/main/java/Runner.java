@@ -5,6 +5,7 @@ public class Runner {
     public static void main(String[] args){
 
         FruitMachine fruitMachine = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.CHERRY);
+        Game game = new Game(fruitMachine);
 //        Symbol reel1 = fruitMachine.getReel1Symbol();
 //        Symbol reel2 = fruitMachine.getReel2Symbol();
 //        Symbol reel3 = fruitMachine.getReel3Symbol();
@@ -17,6 +18,8 @@ public class Runner {
         System.out.println(fruitMachine.getReel1Symbol() + " " + fruitMachine.getReel2Symbol() + " " + fruitMachine.getReel3Symbol());
         fruitMachine.getRandomSymbols();
         System.out.println(fruitMachine.getReel1Symbol() + " " + fruitMachine.getReel2Symbol() + " " + fruitMachine.getReel3Symbol());
+        game.fruitMachine.getRandomSymbols();
+        game.fruitMachine.spin();
     }
 
 }
