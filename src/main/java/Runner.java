@@ -5,7 +5,8 @@ public class Runner {
     public static void main(String[] args){
 
         FruitMachine fruitMachine = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.CHERRY);
-        Game game = new Game(fruitMachine);
+        Player player = new Player("Ross", 2.50);
+        Game game = new Game(fruitMachine, player);
 //        Symbol reel1 = fruitMachine.getReel1Symbol();
 //        Symbol reel2 = fruitMachine.getReel2Symbol();
 //        Symbol reel3 = fruitMachine.getReel3Symbol();

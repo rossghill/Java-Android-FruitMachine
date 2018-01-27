@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static java.lang.Integer.sum;
 
 public class FruitMachine {
 
