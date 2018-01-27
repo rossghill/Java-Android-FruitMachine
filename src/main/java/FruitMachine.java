@@ -19,6 +19,7 @@ public class FruitMachine {
 
     public Symbol getReel1Symbol() {
         return reel1;
+
     }
 
     public Symbol getReel2Symbol() {
@@ -44,14 +45,20 @@ public class FruitMachine {
         return 0;
     }
 
-    public void shuffle() {
+    public void getRandomSymbols() {
         fruits.add(Symbol.CHERRY);
         fruits.add(Symbol.ORANGE);
         fruits.add(Symbol.BANANA);
         fruits.add(Symbol.BAR);
         fruits.add(Symbol.GOLD);
         Collections.shuffle(fruits);
-        Symbol returned_symbol = fruits.get(0);
-        System.out.println(returned_symbol);
+        Symbol random_symbol = fruits.get(0);
+        reel1 = random_symbol;
+        Collections.shuffle(fruits);
+        Symbol random_symbol2 = fruits.get(0);
+        reel2 = random_symbol2;
+        Collections.shuffle(fruits);
+        Symbol random_symbol3 = fruits.get(0);
+        reel3 = random_symbol3;
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public enum Symbol {
 
     CHERRY(10),
@@ -15,6 +17,5 @@ public enum Symbol {
     public int getValue() {
         return this.value;
     }
-
 
 }
