@@ -30,4 +30,9 @@ public class GameTest {
     public void playerHasMoney() {
         assertEquals(2.50, player.getWallet(), 0.01);
     }
+
+    @Test
+    public void moneyCanBeRemovedFromWallet() {
+        assertEquals(2.00, player.spendMoney(0.50), 0.01);
+    }
 }

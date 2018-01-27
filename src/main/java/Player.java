@@ -15,4 +15,8 @@ public class Player {
     public double getWallet() {
         return wallet;
     }
+
+    public double spendMoney(double gameCost) {
+        return wallet -= gameCost;
+    }
 }
