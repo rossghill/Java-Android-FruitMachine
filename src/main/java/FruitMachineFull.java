@@ -59,7 +59,9 @@ public class FruitMachineFull {
         Symbol reel3A = reel2.get(0);
         Symbol reel3B = reel2.get(1);
         Symbol reel3C = reel2.get(2);
-        System.out.println(reel1A);
+        System.out.println(reel1A + " " + reel2A + " " + reel3A);
+        System.out.println(reel1B + " " + reel2B + " " + reel3B);
+        System.out.println(reel1C + " " + reel2B + " " + reel3C);
 
     }
 
