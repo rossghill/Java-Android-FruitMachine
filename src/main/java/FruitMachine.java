@@ -18,7 +18,6 @@ public class FruitMachine {
 
     public Symbol getReel1Symbol() {
         return reel1;
-
     }
 
     public Symbol getReel2Symbol() {
@@ -63,6 +62,7 @@ public class FruitMachine {
         shuffle();
         Symbol random_symbol3 = fruits.get(0);
         reel3 = random_symbol3;
+        System.out.println(reel1 + " " + reel2 + " " + reel3);
     }
 
     public int spin() {
