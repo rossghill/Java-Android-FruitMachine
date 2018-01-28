@@ -7,13 +7,15 @@ public class GameTest {
 
     Game game;
     FruitMachine fruitMachine;
+    FruitMachineFull fruitMachineFull;
     Player player;
 
     @Before
     public void before() {
         fruitMachine = new FruitMachine(Symbol.BANANA, Symbol.GOLD, Symbol.ORANGE);
+        fruitMachineFull = new FruitMachineFull();
         player = new Player("Ross", 2.50);
-        game = new Game(fruitMachine, player);
+        game = new Game(fruitMachineFull, player);
     }
 
 //    @Test

@@ -6,28 +6,46 @@ public class FruitMachineFull {
 
 
     private ArrayList<Symbol> reel1;
-    private ArrayList<Symbol>  reel2;
-    private ArrayList<Symbol>  reel3;
-//    private ArrayList<Symbol> fruits;
+    private ArrayList<Symbol> reel2;
+    private ArrayList<Symbol> reel3;
 
+    private Symbol reel1A;
+    private Symbol reel1B;
+    private Symbol reel1C;
+    private Symbol reel2A;
+    private Symbol reel2B;
+    private Symbol reel2C;
+    private Symbol reel3A;
+    private Symbol reel3B;
+    private Symbol reel3C;
+//    private ArrayList<Symbol> fruits;
 
 
     public FruitMachineFull() {
         this.reel1 = new ArrayList<>();
         this.reel2 = new ArrayList<>();
         this.reel3 = new ArrayList<>();
+        this.reel1A = reel1A;
+        this.reel1B = reel1B;
+        this.reel1C = reel1C;
+        this.reel2A = reel2A;
+        this.reel2B = reel2B;
+        this.reel2C = reel2C;
+        this.reel3A = reel3A;
+        this.reel3B = reel3B;
+        this.reel3C = reel3C;
 //        this.fruits = new ArrayList<>();
     }
 
-    public ArrayList<Symbol>  getReel1Symbols() {
+    public ArrayList<Symbol> getReel1Symbols() {
         return reel1;
     }
 
-    public ArrayList<Symbol>  getReel2Symbols() {
+    public ArrayList<Symbol> getReel2Symbols() {
         return reel2;
     }
 
-    public ArrayList<Symbol>  getReel3Symbols() {
+    public ArrayList<Symbol> getReel3Symbols() {
         return reel3;
     }
 
@@ -48,33 +66,41 @@ public class FruitMachineFull {
         addSymbols(reel2);
         addSymbols(reel3);
         shuffle(reel1);
-        Symbol reel1A = reel1.get(0);
-        Symbol reel1B = reel1.get(1);
-        Symbol reel1C = reel1.get(2);
+        reel1A = reel1.get(0);
+        reel1B = reel1.get(1);
+        reel1C = reel1.get(2);
         shuffle(reel2);
-        Symbol reel2A = reel2.get(0);
-        Symbol reel2B = reel2.get(1);
-        Symbol reel2C = reel2.get(2);
+        reel2A = reel2.get(0);
+        reel2B = reel2.get(1);
+        reel2C = reel2.get(2);
         shuffle(reel3);
-        Symbol reel3A = reel2.get(0);
-        Symbol reel3B = reel2.get(1);
-        Symbol reel3C = reel2.get(2);
+        reel3A = reel2.get(0);
+        reel3B = reel2.get(1);
+        reel3C = reel2.get(2);
         System.out.println(reel1A + " " + reel2A + " " + reel3A);
         System.out.println(reel1B + " " + reel2B + " " + reel3B);
         System.out.println(reel1C + " " + reel2B + " " + reel3C);
 
     }
 
-//    public int spin() {
-//        if (reel1 == reel2 && reel1 == reel3) {
+    public int spin() {
+        getRandomSymbols();
+        if (reel1A.equals(reel2A) && reel2B.equals(reel3)) {
 //            int win = threeMatchingSymbols();
 //            System.out.println("Congratulations! You've won £" + win);
 //            return win;
-//        } else {
+        } else if (reel1B.equals(reel2B) && reel2B.equals(reel3B)) {
+
+        } else if (reel1C.equals(reel2B) && reel2B.equals(reel3A)) {
+
+        } else {
 //            int win = noMatchingSymbols();
 //            System.out.println("Hard luck! Your winnings are £" + win);
-//            return 0;}
-//    }
+        }
+        return 0;
+    }
+}
+
 
 //    public int threeMatchingSymbols() {
 //        int value1 = reel1.getValue();
@@ -89,4 +115,3 @@ public class FruitMachineFull {
 //
 //    public int noMatchingSymbols() {
 //        return 0;
-}

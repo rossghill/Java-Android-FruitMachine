@@ -5,8 +5,8 @@ public enum Symbol {
     CHERRY(10),
     ORANGE(25),
     BANANA(50),
-    BAR(100),
-    GOLD(250);
+    BAR  (100),
+    GOLD (250);
 
     private final int value;
 

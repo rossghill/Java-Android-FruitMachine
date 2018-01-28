@@ -6,34 +6,35 @@ import static java.lang.Character.toUpperCase;
 
 public class Game {
 
-    FruitMachine fruitMachine;
+//    FruitMachine fruitMachine;
+    FruitMachineFull fruitMachineFull;
     Player player;
 
-    public Game(FruitMachine fruitMachine, Player player) {
-        this.fruitMachine = fruitMachine;
+    public Game(FruitMachineFull fruitMachineFull, Player player) {
+        this.fruitMachineFull = fruitMachineFull;
         this.player = player;
     }
 
-    public void startGame() {
-        System.out.println("Welcome " + player.getName() + ", your balance is " + player.getWallet());
-        while (player.getWallet() > 0) {
-            Scanner reader = new Scanner(System.in);
-            System.out.println("Type SPIN to play or QUIT to end game");
-            String selection = reader.next();
-            selection = selection.toUpperCase();
-            if (selection.equals("SPIN") ) {
-                player.spendMoney(0.5);
-                fruitMachine.getRandomSymbols();
-                fruitMachine.spin();
-            } else if (selection.equals("QUIT")) {
-                System.out.println("Thanks for playing! Your balance is " + player.getWallet());
-                break;
-            } else {
-                System.out.println("I don't recognise that command.");
-            }
-            reader.close();
-        }
+//    public void startGame() {
+//        System.out.println("Welcome " + player.getName() + ", your balance is " + player.getWallet());
+//        while (player.getWallet() > 0) {
+//            Scanner reader = new Scanner(System.in);
+//            System.out.println("Type SPIN to play or QUIT to end game");
+//            String selection = reader.next();
+//            selection = selection.toUpperCase();
+//            if (selection.equals("SPIN") ) {
+//                player.spendMoney(0.5);
+//                fruitMachineFull.getRandomSymbols();
+//                fruitMachineFull.spin();
+//            } else if (selection.equals("QUIT")) {
+//                System.out.println("Thanks for playing! Your balance is " + player.getWallet());
+//                break;
+//            } else {
+//                System.out.println("I don't recognise that command.");
+//            }
+//            reader.close();
+//        }
 
-    }
+//    }
 
 }

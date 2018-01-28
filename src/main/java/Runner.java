@@ -7,7 +7,7 @@ public class Runner {
         FruitMachine fruitMachine = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.CHERRY);
         FruitMachineFull fruitMachineFull = new FruitMachineFull();
         Player player = new Player("Ross", 2.50);
-        Game game = new Game(fruitMachine, player);
+        Game game = new Game(fruitMachineFull, player);
 //        System.out.println("Welcome " + player.getName() + ", your balance is " + player.getWallet());
 //        Symbol reel1 = fruitMachine.getReel1Symbol();
 //        Symbol reel2 = fruitMachine.getReel2Symbol();
@@ -24,8 +24,7 @@ public class Runner {
 //        game.startGame();
 //        player.getWallet();
 //        game.startGame();
-            fruitMachineFull.getRandomSymbols();
-
+          fruitMachineFull.getRandomSymbols();
 
     }
 }
