@@ -2,7 +2,7 @@
 public class Runner {
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         FruitMachine fruitMachine = new FruitMachine(Symbol.CHERRY, Symbol.CHERRY, Symbol.CHERRY);
         Player player = new Player("Ross", 2.50);
@@ -22,7 +22,8 @@ public class Runner {
 //        System.out.println(fruitMachine.getReel1Symbol() + " " + fruitMachine.getReel2Symbol() + " " + fruitMachine.getReel3Symbol());
 //        game.startGame();
 //        player.getWallet();
-        fruitMachine.getRandomSymbols();
-    }
+//        game.startGame();
 
+
+    }
 }
