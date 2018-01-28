@@ -7,12 +7,20 @@ public class FruitMachine {
     private Symbol reel1;
     private Symbol reel2;
     private Symbol reel3;
+//    private ArrayList<Symbol> reel1;
+//    private ArrayList<Symbol> reel2;
+//    private ArrayList<Symbol> reel3;
     private ArrayList<Symbol> fruits;
+
+
 
     public FruitMachine(Symbol reel1, Symbol reel2, Symbol reel3) {
         this.reel1 = reel1;
         this.reel2 = reel2;
         this.reel3 = reel3;
+//        this.reel1 = new ArrayList<>();
+//        this.reel2 = new ArrayList<>();
+//        this.reel3 = new ArrayList<>();
         this.fruits = new ArrayList<>();
     }
 
