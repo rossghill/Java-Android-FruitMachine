@@ -77,6 +77,7 @@ public class FruitMachineFull {
         reel3A = reel2.get(0);
         reel3B = reel2.get(1);
         reel3C = reel2.get(2);
+        System.out.println("=====SLOTS=====");
         System.out.println(reel1A + " " + reel2A + " " + reel3A);
         System.out.println(reel1B + " " + reel2B + " " + reel3B);
         System.out.println(reel1C + " " + reel2B + " " + reel3C);
@@ -85,22 +86,30 @@ public class FruitMachineFull {
 
     public int spin() {
         getRandomSymbols();
-        if (reel1A.equals(reel2A) && reel2B.equals(reel3)) {
-//            int win = threeMatchingSymbols();
-//            System.out.println("Congratulations! You've won £" + win);
-//            return win;
+        if (reel1A.equals(reel2A) && reel2B.equals(reel3C)) {
+                return win(reel1A, reel2B, reel3C);
         } else if (reel1B.equals(reel2B) && reel2B.equals(reel3B)) {
-
+                return win(reel1B, reel2B, reel3B);
         } else if (reel1C.equals(reel2B) && reel2B.equals(reel3A)) {
-
+                return win(reel1C, reel2B, reel3A);
         } else {
-//            int win = noMatchingSymbols();
-//            System.out.println("Hard luck! Your winnings are £" + win);
+           return lose();
         }
+    }
+
+    public int win(Symbol winningReel1, Symbol winningReel2, Symbol winningReel3) {
+        int value1 = winningReel1.getValue();
+        int value2 = winningReel2.getValue();
+        int value3 = winningReel3.getValue();
+        int winnings = value1 + value2 + value3;
+        System.out.println("Congrats! You matched three symbols and won " + winnings);
+        return winnings;
+    }
+
+    public int lose() {
         return 0;
     }
 }
-
 
 //    public int threeMatchingSymbols() {
 //        int value1 = reel1.getValue();
